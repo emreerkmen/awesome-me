@@ -1,0 +1,49 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.profil-pic {
+  border: 2px solid rgb(155, 155, 155);
+  border-radius: 25px;
+  object-fit: cover;
+
+}
+
+ul.bullet{
+  list-style-type: circle;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+//div {
+//  border: 2px solid red;
+//}
+
+div.center {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
