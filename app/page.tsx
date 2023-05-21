@@ -28,7 +28,7 @@ export default function Home() {
         <p>Expert Software Engineer - May, 2022 - Present</p>
 
         <p>Responsible for project of development and maintaining garantibbva.com.tr, the
-          website of Turkey's second largest private bank GarantiBBVA and CMS used
+          website of Turkey&apos;s second largest private bank GarantiBBVA and CMS used
           throughout the company. My Responsibilities;</p>
         <ul className='bullet'>
           <li>Proficient in designing micro service based REST APIs using Java with Spring MVC, Spring Boot frameworks and Golang with Gorilla Mux library and utilizing tools like Postman for API testing and documentation.</li>
