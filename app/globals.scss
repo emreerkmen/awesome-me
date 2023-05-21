@@ -16,11 +16,11 @@
   border: 2px solid rgb(155, 155, 155);
   border-radius: 25px;
   object-fit: cover;
-  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
-
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
 }
 
-ul.bullet{
+ul.bullet {
   list-style-type: circle;
 }
 
@@ -29,6 +29,7 @@ ul.bullet{
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
+  margin: 0 20px 0 20px;
 }
 
 //div {
@@ -47,4 +48,12 @@ div.center {
   p {
     text-align: justify;
   }
+}
+
+.box-shadow {
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+  border-radius: 22px;
+  padding: 20px;
+  max-width: 695px;
 }
