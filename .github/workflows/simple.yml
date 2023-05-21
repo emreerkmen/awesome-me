@@ -35,3 +35,10 @@ jobs:
           sleep 5s;
           echo "Running Security Checks ..3"
           sleep 5s;
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+        - name: Deploy to Production
+          run: |
+            echo "Deployment is starting ..."
