@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import BlogText from "../components/blog/BlogText"
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
           <li>Implemented a cache mechanism for the CMS, resulting in a 90% decrease in CPU usage.</li>
         </ul>
       </div>
+      <BlogText></BlogText>
     </main>
   )
 }
