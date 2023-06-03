@@ -1,5 +1,5 @@
 ---
-title: 'Migros Technology - Software Engineer'
+title: 'Migros Retail - Software Engineer'
 date: 'Aug, 2019 - Aug, 2020'
 order: 3
 ---
