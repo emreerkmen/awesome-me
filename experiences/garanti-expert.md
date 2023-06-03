@@ -1,9 +1,10 @@
 ---
 title: 'GarantiBBVA Technology - Expert Software Engineer'
 date: 'May, 2022 - Present'
+order: 6
 ---
 
-##### Responsible for project of development and maintaining garantibbva.com.tr, the website of Turkey's second largest private bank GarantiBBVA and CMS used throughout the company. My Responsibilities;
+Responsible for project of development and maintaining garantibbva.com.tr, the website of Turkey's second largest private bank GarantiBBVA and CMS used throughout the company. My Responsibilities;
 
 - Proficient in designing micro service based REST APIs using Java with Spring MVC, Spring Boot frameworks and Golang with Gorilla Mux library and utilizing tools like Postman for API testing and documentation.
 - Developed reusable, high-quality, testable, and secure (using SonarLint) code. Documented the code and implemented unit tests.
@@ -12,7 +13,7 @@ Created and managed containerized applications using Docker and Openshift.
 - Developed and deployed multiple Hazelcast client applications in Java, reducing data access latency by 50% and database load by 20%.
 Managed and maintained JBoss and Apache web servers on Linux servers.
 - Utilized React JS library to build scalable and performant web applications.
-- Proficient in fundamental front-end languages such as HTML, CSS, and JS.
+- Proficient in fundamental front-end languages such as HTML, CSS, Javascript and Typescript.
 - Built and maintained pipelines for CI/CD using Jenkins, Git, Bitbucket.
 - Monitored server status and application logs using Dynatrace, Instana, Splunk, and Elastic Search, troubleshooting and debugging bugs and problems in applications.
 - Utilized Agile Scrum methodology to successfully manage projects and deliver high-quality products.

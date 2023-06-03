@@ -17,7 +17,26 @@ export async function getSortedExperiencesData(): Promise<ExperienceData[]> {
   // Get file names under /experiences
   const fileNames = fs.readdirSync(experiencesDirectory);
   const allExperiencesData: Promise<ExperienceData[]> = Promise.all(
-    fileNames.map(async (fileName) => {
+    fileNames.map(getExperience())
+  );
+
+  // Sort experiences by date
+  return Promise.resolve(
+    (await allExperiencesData).sort((a, b) => {
+      if (a.order < b.order) {
+        return 1;
+      } else {
+        return -1;
+      }
+    })
+  );
+
+  function getExperience(): (
+    value: string,
+    index: number,
+    array: string[]
+  ) => Promise<{ id: string; content: string }> {
+    return async (fileName) => {
       // Remove ".md" from file name to get id
       const id = fileName.replace(/\.md$/, "");
 
@@ -40,17 +59,6 @@ export async function getSortedExperiencesData(): Promise<ExperienceData[]> {
         content: contentHtml,
         ...matterResult.data,
       };
-    })
-  );
-
-  // Sort experiences by date
-  return Promise.resolve(
-    (await allExperiencesData).sort((a, b) => {
-      if (a.date < b.date) {
-        return 1;
-      } else {
-        return -1;
-      }
-    })
-  );
+    };
+  }
 }
