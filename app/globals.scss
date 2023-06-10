@@ -69,9 +69,10 @@ div.center {
   animation-duration: 150s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-delay: -17s;
   &-second{
     @extend .mosth-depth-base-image;
-    animation-delay: 7s;
+    animation-delay: -7s;
     animation-name: blob-animation-second;
   }
 }
@@ -80,13 +81,13 @@ div.center {
 /* The animation code */
 @keyframes blob-animation {
   0%   {left:0px; top:0px; transform: rotate(0deg)}
-  11%  {left:100%; top:25%; transform: rotate(40deg)}
+  11%  {left:83%; top:25%; transform: rotate(40deg)}
   22%  {left:0px; top:50%; transform: rotate(80deg)}
-  33%  {left:100%; top:75%; transform: rotate(120deg)}
+  33%  {left:90%; top:75%; transform: rotate(120deg)}
   44%  {left:0px; top:100%; transform: rotate(160deg)}
-  55%  {left:100%; top:75%; transform: rotate(200deg)}
+  55%  {left:90%; top:75%; transform: rotate(200deg)}
   66%  {left:0px; top:50%; transform: rotate(240deg)}
-  77%  {left:100%; top:25%; transform: rotate(280deg)}
+  77%  {left:90%; top:25%; transform: rotate(280deg)}
   100%  {left:0px; top:0px; transform: rotate(320deg)}
 }
 
