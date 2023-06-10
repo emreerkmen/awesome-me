@@ -1,6 +1,7 @@
 import "./globals.scss";
 import { Inter } from "next/font/google";
 import layoutStyle from "../styles/layout.module.scss";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " " + layoutStyle.flex_container}>
-        {children}
+      <body
+        className={`${inter.className} ${layoutStyle.flex_container} ${layoutStyle.body}`}
+      >
+        <Image
+          src="./media/blob-1.svg"
+          width={80}
+          height={100}
+          alt="blob"
+          loading="lazy"
+          className="mosth-depth-base-image"
+        ></Image>
+        <Image
+          src="./media/rectangle.svg"
+          width={80}
+          height={100}
+          alt="blob second"
+          loading="lazy"
+          className="mosth-depth-base-image-second"
+        ></Image>
+        <div className={layoutStyle.glass_body}>{children}</div>
       </body>
     </html>
   );

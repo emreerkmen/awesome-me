@@ -1,8 +1,18 @@
 .flex_container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 20px 0 20px;
-  }
-  
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.body {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.glass_body {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  backdrop-filter: blur(7px);
+}
