@@ -53,8 +53,10 @@ export default async function Home() {
         </div>
       </div>
       <div className="flex-container center">
-        <h1 className="">Here is my resume</h1>
+        <div>
+        <h1 className="resume">Here is my resume</h1>
         <h2>Summary</h2>
+        </div>
         {experiences.map(({ id, content, ...data }: ExperienceData) => (
           <div key={id}>
             <BlogText
